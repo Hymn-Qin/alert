@@ -1,5 +1,6 @@
 # alert
 
+[![](https://jitpack.io/v/Hymnal-Qin/alert.svg)](https://jitpack.io/#Hymnal-Qin/alert)
 ----
 
 

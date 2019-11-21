@@ -22,8 +22,9 @@ class MainActivity : AppCompatActivity() {
             alert {
                 title = "权限说明"
                 msg = "该应用需要访问存储权限，现在去设置"
-//                left = "取消"
+                left = "取消"
                 right = "知道了"
+                view = null
                 cancelable = true
                 type = Alert.Type.NORMAL
                 listener = {

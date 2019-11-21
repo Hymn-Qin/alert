@@ -3,9 +3,10 @@
     <color name="base_dialog">#ffffff</color>
     <color name="base_dialog_text">#00ba29</color>
     <!--dialog-->
-    <color name="dialog_msg_text_block">#15161a</color>
+    <color name="dialog_title_text_block">#636363</color>
+    <color name="dialog_msg_text_block">#636363</color>
     <color name="dialog_btn_ripple_light">#bbbbbbbb</color>
-    <color name="dialog_line_color">#9b9ba5</color>
+    <color name="dialog_line_color">#DDDDDD</color>
 
     <color name="float_transparent">#00000000</color>
     <color name="sweet_dialog_bg_color">#FFFFFF</color>

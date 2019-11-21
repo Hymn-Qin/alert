@@ -34,24 +34,22 @@ internal class Custom : DialogFragment() {
                 if (!title.isNullOrEmpty()) {
                     textView {
                         gravity = Gravity.CENTER
-                        background = context.drawable(R.drawable.dialog_line_dash_btm)
+                        background = context.drawable(R.drawable.dialog_line_btm)
                         text = title
-                        textSize = 16f
+                        textSize = 15f
                         textColor = context.color(R.color.dialog_msg_text_block)
                     }.lparams(width = matchParent, height = height) {
-                        marginStart = 20
-                        marginEnd = 20
+
                     }
                 }
 
                 verticalLayout {
                     gravity = Gravity.CENTER
                     addView(viewCustom)
-                    background = context.drawable(R.drawable.dialog_line_dash_btm)
+                    background = context.drawable(R.drawable.dialog_line_btm)
                     padding = 20
                 }.lparams(width = matchParent, height = wrapContent) {
-                    marginStart = 20
-                    marginEnd = 20
+
                 }
                 verticalLayout {
                     orientation = LinearLayout.HORIZONTAL
@@ -65,11 +63,13 @@ internal class Custom : DialogFragment() {
                             }
 
                             text = this@Custom.left
+                            textSize = 14f
+                            textColor = context.color(R.color.dialog_msg_text_block)
                         }.lparams(width = matchParent, height = height, weight = 1f)
 
                         view {
-                            background = context.drawable(R.drawable.dialog_line_dash_ver)
-                        }.lparams(width = 1, height = height - 40) {
+                            background = context.drawable(R.drawable.dialog_line_ver)
+                        }.lparams(width = 1, height = matchParent) {
                             gravity = Gravity.CENTER
                         }
                     }
@@ -87,6 +87,7 @@ internal class Custom : DialogFragment() {
                             listener?.invoke(true)
                         }
                         text = this@Custom.right
+                        textSize = 14f
                         textColor = context.color(R.color.base_dialog_text)
                     }.lparams(width = matchParent, height = height, weight = 1f)
                 }

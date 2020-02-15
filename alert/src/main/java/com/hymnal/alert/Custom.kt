@@ -47,7 +47,6 @@ internal class Custom : DialogFragment() {
                     gravity = Gravity.CENTER
                     addView(viewCustom)
                     background = context.drawable(R.drawable.dialog_line_btm)
-                    padding = 20
                 }.lparams(width = matchParent, height = wrapContent) {
 
                 }

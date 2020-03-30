@@ -7,6 +7,8 @@ import android.graphics.drawable.Drawable
 import android.os.Build
 import android.support.annotation.ColorRes
 import android.support.annotation.DrawableRes
+import android.support.v4.app.DialogFragment
+import android.support.v4.app.FragmentManager
 import android.view.Gravity
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -267,4 +269,9 @@ fun Context.createProgressDialog(msg: String?): AlertDialog {
 
     dialog.setContentView(view)
     return dialog
+}
+
+fun DialogFragment.show(manager: FragmentManager, tag:String) {
+    if (manager.findFragmentByTag(tag) != null) return
+    this.show(manager, tag)
 }

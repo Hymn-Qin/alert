@@ -1,8 +1,6 @@
 # alert
 
-[![](https://jitpack.io/v/Hymnal-Qin/alert.svg)](https://jitpack.io/#Hymnal-Qin/alert)
-----
-
+[![](https://jitpack.io/v/Hymn-Qin/alert.svg)](https://jitpack.io/#Hymn-Qin/alert)
 
 
 To get a Git project into your build:   
@@ -24,7 +22,7 @@ Step 2. Add the dependency
 
 ```
 dependencies {
-	        implementation 'com.github.Hymnal-Qin:alert:Tag'
+	        implementation 'com.github.Hymn-Qin:alert:Tag'
 	}
 ```
 
